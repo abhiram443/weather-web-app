@@ -1,10 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    background-color: blue;
-    height: 100%;
-    width: 100%;
-}
-h1{
-    color: black;
-    font-size: larger;
+    
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
     
 }
+
+
+.outer{
+    background-color: rgb(171, 199, 243);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weatherBox{
+    padding: 40px;
+    place-self: center;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg,#2f4680,#500ae4);
+}
+.search-container input{
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    height: 30px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+    padding-left: 20px;
+
+
+
+}
+.search-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    
+    
+
+}
+.search-container img{
+    margin-top: -2px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: #ebfffc;
+    cursor: pointer;
+}
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-icon{
+    width: 150px;
+    margin: 30px 0px;
+}
+.temperature{
+    margin-top: -20px;
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+
+
+}
+.location{
+    margin-top: -60px;
+    color: #fff;
+    font-size: 40px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+}
+.info-container p{
+    margin-top: -3px;
+    margin-bottom: 0px;
+}
+
